@@ -1,3 +1,5 @@
+<img align="right" src="logo.png" width="60px" height="81px">
+
 # Python File Converter
 
 ## Description
