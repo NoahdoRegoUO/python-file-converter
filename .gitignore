@@ -1,0 +1,8 @@
+/env
+
+*.mov
+*.mp4
+*.mp3
+*.gif
+
+.DS_Store
