@@ -8,4 +8,5 @@ An interactive command line program that is used to convert file types. The prog
 to the "input" folder, ask you to select your desired conversions (example: MOV -> GIF), and create the resulting files in the
 "output" folder.
 
-The program is currently a WIP, and version 0.1.0 is yet to release.
+The program is built with the ffmpeg-python library, which allows the use of FFmpeg commands. The program is currently a WIP, and
+version 0.1.0 is yet to release.

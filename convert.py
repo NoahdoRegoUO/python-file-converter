@@ -1,6 +1,8 @@
 import os
 import ffmpeg
 
+input_files = "input"
+
 print(
     """
       *** FILE CONVERTER ***
@@ -13,14 +15,17 @@ print(
 
 input("[Press enter]")
 
-print(
-    """
-      Choose a conversion by entering a number from the list below
-      1: MP4/MOV -> GIF
-      2: MP4/MOV -> MP3
-    """
-)
+for filename in os.listdir(input_files):
+    filepath = "input/" + filename
 
-conversion = input("Conversion: ")
+    print(
+        """
+        Choose a conversion by entering a number from the list below
+        1: MP4/MOV -> GIF
+        2: MP4/MOV -> MP3
+        """
+    )
 
-(ffmpeg.input("input.mov").output("input.gif").run())
+    conversion = input("Conversion: ")
+
+    ffmpeg.input(filepath).output("input.gif").run()
