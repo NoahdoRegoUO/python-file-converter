@@ -17,18 +17,14 @@ Prerequisites: to run this program, you'll need [Git](https://git-scm.com) and [
 From your command line / terminal:
 
 1. Clone the directory with Git
-2. Create two folders in the root of the directory, with the following names:
-
-- input
-- output
-
+2. [optional] remove the .gitkeep files from input and output directories
 3. Add your desired file(s) to convert to the "input" folder
 4. Install the ffmpeg-python library with `pip install ffmpeg-python`
 5. Run the program with `python3 convert.py` and choose your desired conversions
 
 ## Version
 
-Version 0.1.0 - Supported conversions:
+Version `0.1.0` - Supported conversions:
 
 - MP4 --> MP3 / GIF
 - MOV --> MP3 / GIF
