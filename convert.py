@@ -1,8 +1,6 @@
 import os
 import ffmpeg
 
-input_files = "input"
-
 print(
     """
     *** FILE CONVERTER ***
@@ -17,7 +15,7 @@ input(
     [Press enter to continue]"""
 )
 
-for file_name in os.listdir(input_files):
+for file_name in os.listdir("./input"):
     file_path = "input/" + file_name
 
     file_name, file_extension = os.path.splitext(file_name)
